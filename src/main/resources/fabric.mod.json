@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "simple-swap",
+	"version": "${version}",
+	"name": "Simple Swap",
+	"description": "This is a simple mod to swap your Armor and Elytra with one key made by SilverDisc",
+	"authors": [
+		"SilverDisc!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/simple-swap/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.silverdisc.simpleswap.SimpleSwap"
+		],
+		"client": [
+			"net.silverdisc.simpleswap.SimpleSwapClient"
+		],
+		"fabric-datagen": [
+			"net.silverdisc.simpleswap.SimpleSwapDataGenerator"
+		]
+	},
+	"mixins": [
+		"simple-swap.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
